@@ -1,13 +1,11 @@
 const User = require('../model/index')
 
 const findUser = (fields)=>{
-   const findEntry =  User.findOne(fields)
-    return findEntry
+   return User.findOne(fields)
 }
 
 const createUser = (fields)=>{
-    const createEntry = User.create(fields)
-    return createEntry
+    return User.create(fields)
 }
 
 module.exports = {findUser,createUser}
